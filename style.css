@@ -1,0 +1,286 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #FBF1F1;
+
+  /* Customize the font, size, and color for text*/
+  font-family: Georgia;
+  font-size: 15px;
+  color: #F2945B;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  list-style-type: none;
+  overflow: hidden;
+  position: static;
+  top: 10px;
+  margin-left: 40px;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+#logo-name {
+  margin-top: 30px;
+}
+
+h1 {
+  color: #E83F6F;
+}
+
+h2 {
+  font-size: 30px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+h3 {
+  margin-left: 20px;
+}
+
+img {
+  margin: 20px;
+}
+
+#about {
+  margin-top: 10%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 25%;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #E83F6F;
+}
+
+.card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-color: #8c9a9a;
+}
+
+.card h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  color: white;
+}
+
+.card p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: wheat;
+}
+
+button {
+  background-color: #E83F6F;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin-top: 10%;
+}
+
+.header-items:nth-of-type(1) {
+  display: flex;
+  align-items: start;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 75px;
+}
+
+.header-items:nth-of-type(2) {
+  display: flex;
+  align-items: end;
+}
+
+
+/* Part 1: Navbar */
+
+/* General style rule set for all items in ul */
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 10px;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+  float: left;
+  margin: 10px;
+}
+
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  font-family: Georgia;
+  color: #EBADA3;
+  font-size: 20px;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+.video {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: end;
+  font-size: 15px;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #DE5349;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.dark-mode .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: end;
+  font-size: 15px;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode a {
+  color: #FFA94D;
+}
+
+.dark-mode a:hover {
+  color: #FD7272;
+}
+
+#theme-button {
+  background-color: #E83F6F;
+  color: white;
+  cursor: pointer;
+}
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.petition-para {
+  width: 80%;
+  padding-right: 10px;
+  margin-left: 20px;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background: pink;
+}
+
+#sign-petition {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0px;
+  width: 60%;
+  padding-bottom: 10px;
+  margin-left: 300px;
+}
+
+#sign-now-button {
+  background-color: #E83F6F;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-left: 815px;
+  margin-bottom: 50px;
+
+  &:hover {
+    background-color: #C3244D;
+    /* Darker background color on hover */
+  }
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}

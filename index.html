@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Paw2Paw</title>
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="logo">
+    <img src="img/paw-print.png" height="50px" width="60px">
+    <h1 id="logo-name">
+      PAW2PAW
+    </h1>
+  </div>
+  <!-- Part 1: Navbar Starter Code -->
+
+
+  <div class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#petition">Petition</a></li>
+      <li><button id="theme-button">Toggle Dark Mode</button></li>
+    </ul>
+  </div>
+  <div class="header-container revealable">
+    <div class="header-items">
+      <h3>Providing homes to stray & rescued animals :)</h3>
+    </div>
+    <div class="header-items">
+      <img src="img/dog-food.png" />
+    </div>
+  </div>
+
+  <!-- Part 2: Flexbox Layout Stater Code -->
+
+
+  <!--- About --->
+  <h2 id="about">About</h2>
+  <div class="cards revealable">
+    <div class="card">
+      <img src="img/stay-home.png">
+      <h3>Spreading Awareness</h3>
+      <p>Helping out rescued animals by raising awareness in the community</p>
+    </div>
+    <div class="card">
+      <img src="img/dog-house.png">
+      <h3>Taking care</h3>
+      <p>Connecting pet owners to animal rescue sanctuaries</p>
+    </div>
+    <div class="card">
+      <img src="img/cat.png">
+      <h3>Creating Families</h3>
+      <p>Providing stray and rescued animals a family</p>
+    </div>
+  </div>
+
+  <!--- Impact --->
+  <h2 id="impact">Impact!</h2>
+  <div class="revealable">
+    <p>
+      <br>
+      We aim to provide animals with a home and family to adopt from.
+      Our main audience will be potential pet owners who already own pets or are looking to adopt one!
+      <br>
+      <br>
+      <a href="https://www.alveussanctuary.org/donate">Donate to an animal shelter sanctuary</a>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </p>
+  </div>
+
+  <!--- News --->
+  <!--this will help with a stretch goal, if you do not want to incorporate this, then leave it alone :)-->
+  <h2 id="news">Recent News </h2>
+  <p>
+  <h3>Some videos related to animal cruelty and animal shelter sanctuaries :</h3>
+  </p>
+  <div class="video revealable">
+    <iframe width="534" height="300" src="https://www.youtube.com/embed/HYFO1KfJ2G4?si=Wesx2SAwgr0ebKst"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+      gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="534" height="300" src="https://www.youtube.com/embed/YWGzaqigAo8?si=4mzQX1mbyMAc1trH"
+      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+      gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="534" height="300" src="https://www.youtube.com/embed/IMF7OPYVg8g?si=Z4HkVETQZVKkdQnf"
+      title="YouTube video player" frameborder="0" allow="accelerometer; 
+      autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+      web-share" allowfullscreen></iframe>
+
+  </div>
+
+  <div class="petition revealable" id="petition">
+
+    <h2>Sign Our Petition 📢</h2>
+    <div class="petition-container">
+
+
+      <div class="petition-para">
+        <p>
+          Join us in our mission to raise awareness for the countless animals rescued from dire situations.
+          These animals have experienced hardship and suffering, but with your support, we can make their stories
+          heard.
+          Sign the petition today to advocate for better treatment, care, and protection of rescued animals.
+          Together, we can be their voice and ensure they have the chance to live a life filled with love and
+          compassion
+        </p>
+      </div>
+
+      <div class="signatures">
+        <p>🖊️ DJ from Brooklyn supports this!</p>
+        <p>🖊️ Amy from Queens supports this!</p>
+        <p>🖊️ Teresa from Harlem supports this!</p>
+        <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+      </div>
+
+    </div>
+
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="hometown">Hometown:</label>
+      <input type="text" id="hometown" name="hometown" required>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+
+    </form>
+    <p></p>
+    <button id="sign-now-button">Sign Now</button>
+
+
+  </div>
+  <div class="footer">
+    <a href="https://www.aspca.org/">Animal Cruelty Website Resources</a>
+    <a href="mailto:shashwatmishra348@gmail.com">Email Us!</a>
+    <a href="https://www.alveussanctuary.org/donate">Donate</a>
+  </div>
+  <script src="index.js"></script>
+
+
+</body>
+
+</html>
